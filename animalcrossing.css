@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Rumoura';
-    src: url('./fonts/Rumoura.otf');
+    font-family: 'rumoura';
+    src: url('./fonts/rumoura.ttf');
 }
 html{
     padding: 0;
@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    font-family: 'Rumoura', sans-serif;
+    font-family: 'rumoura', sans-serif;
     color: #f1d605f5;
     text-shadow: 2px 4px #896f08cb;
     flex-direction: column;
@@ -49,7 +49,7 @@ span{
 }
 
 button{
-    font-family: 'Rumoura', sans-serif;
+    font-family: 'rumoura', sans-serif;
     font-size: 20px;
     color: #f1d605f5;
     text-shadow: 2px 2px #94790d;
