@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     ] 
     
     //====function: randomize & sort
-    const randSort =git () => {
+    const randSort = () => {
         cardArray.sort(() => 0.5-Math.random())
         return cardArray
     }
