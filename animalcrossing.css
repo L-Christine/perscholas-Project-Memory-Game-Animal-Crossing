@@ -1,0 +1,107 @@
+@import url('http://fonts.cdnfonts.com/css/rumoura-personal-use-only');
+
+html{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+}
+
+body{
+    font-family: 'Rumoura PERSONAL USE ONLY', sans-serif;
+    color: #f1d605f5;
+    text-shadow: 2px 4px #896f08cb;
+    flex-direction: column;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas: 'header header''side main';
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+header{
+    grid-area: header;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: side;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(88, 31, 10, 0.586);
+    padding: 5px;
+    margin: 5px;
+}
+
+span{
+    font-size: 4rem;
+}
+
+button{
+    font-family: 'Mars Brands', sans-serif;
+    font-size: 20px;
+    color: #f1d605f5;
+    text-shadow: 2px 2px #94790d;
+    background-color: rgba(182, 82, 49, 0.688);
+    border: solid rgba(88, 31, 10, 0.586);
+    padding: 10px, 10px, 10px, 10px;
+    width: 5em;
+    height: 3em;
+    
+}
+
+button:hover{
+    background-color: rgb(161, 238, 114);
+}
+
+#musicBtn{
+    width: 2em;
+    height: 2em;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-gap: 10px;
+    perspective: 800px;
+    justify-content: center;
+}
+
+img{
+    width: 115px;
+    height: 161px;
+}
+.card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: rgba(0,0,0,0.2) 0px 5px 15px; 
+    /*shadow @ x, shadow @ y, blurriness*/ 
+    width: 115px;
+    height: 161px;
+    
+}
+
+.front,
+.back{
+    backface-visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+}
+
+.front {
+    transform: rotateY(-180deg);
+}
+
+.toggle{
+    transform: rotateY(180deg);
+}
