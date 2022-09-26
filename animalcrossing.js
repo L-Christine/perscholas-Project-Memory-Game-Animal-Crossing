@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     
     //====function: game start & set cards on the board
     const playGame = () => {
+        randSort()
         //create element, attach class
         cardArray.forEach((item) => {
             const card = document.createElement('div')
